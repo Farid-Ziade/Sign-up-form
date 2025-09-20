@@ -1,0 +1,29 @@
+/* Merriweather as font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  font-size: 1.3rem;
+}
+.page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.left {
+  height: 100%;
+  width: 80%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/leaf-img.png);
+}
+.right {
+  height: 100vh;
+  width: 100%;
+}
+.paragraph {
+  padding: 3em;
+  background-color: aqua;
+}

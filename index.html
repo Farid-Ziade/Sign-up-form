@@ -14,12 +14,25 @@
   </head>
   <body>
     <main class="page-container">
-      <section class="left"></section>
+      <section class="left">
+        <div class="img-border">
+          <div class="title">
+            <img src="./images/odin-logo.png" alt="odin-logo" />
+            <h1>Odin</h1>
+          </div>
+          <p>
+            Photo by <span>Halie West</span> on
+            <a href="unsplash.com">Unsplash</a>
+          </p>
+        </div>
+      </section>
       <section class="right">
         <div class="container">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up
             <em>now</em> to get started.
           </p>
           <br />
@@ -28,11 +41,11 @@
         <div class="input-container">
           <h1>Let's do this!</h1>
           <br />
-          <form class="input">
+          <form name="f" class="input">
             <div>
               <label for="firstName">FIRST NAME</label>
               <div>
-                <input type="text" name="firstName" id="firstName" required />
+                <input type="text" name="firstName" id="firstName" />
               </div>
             </div>
             <div>
@@ -52,18 +65,28 @@
             <div>
               <label for="password">PASSWORD</label>
 
-              <div><input type="password" name="password" id="password" /></div>
+              <div>
+                <input type="password" name="password" id="password" required />
+              </div>
             </div>
             <div>
               <label for="password">CONFIRM PASSWORD</label>
-              <div><input type="password" name="password" id="password" /></div>
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  id="confirmPassword"
+                  required
+                />
+              </div>
             </div>
-            <button type="submit">submit</button>
           </form>
         </div>
-        <div class="submit"></div>
+        <div class="submit">
+          <button type="submit">Create Account</button>
+          <p>Already have an account ? <a href="">Log in</a></p>
+        </div>
       </section>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
